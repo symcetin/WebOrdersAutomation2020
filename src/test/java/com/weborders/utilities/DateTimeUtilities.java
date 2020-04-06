@@ -6,6 +6,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
 public class DateTimeUtilities {
+
     /**
      * This method returns current date as a string.
      * Provide a format as a parameter
@@ -26,12 +27,11 @@ public class DateTimeUtilities {
         return LocalDate.now().format(DateTimeFormatter.ofPattern(format));
     }
 
-
     /**
      * This method returns difference between end and start time
      * @param start time
      * @param end time
-     * @param format like h:mm a
+     * @param format like h:m a --> 5:15 AM, 8:07 PM
      * @return difference between end time and start time as a long
      */
     public static long getTimeDifference(String start, String end, String format){

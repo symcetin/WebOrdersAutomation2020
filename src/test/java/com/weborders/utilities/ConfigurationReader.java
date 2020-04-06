@@ -1,5 +1,8 @@
 package com.weborders.utilities;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
 import java.io.FileInputStream;
 import java.util.Properties;
 
@@ -33,10 +36,4 @@ public class ConfigurationReader {
     public static String getProperty(String keyName) {
         return configFile.getProperty(keyName);
     }
-
 }
-
-
-
-
-

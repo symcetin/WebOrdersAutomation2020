@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Driver {
+
     //same for everyone
     private static WebDriver driver;
 
@@ -53,5 +54,4 @@ public class Driver {
             driver = null;
         }
     }
-
 }
